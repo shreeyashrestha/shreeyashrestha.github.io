@@ -4,4 +4,28 @@ body
 	background-image: linear-gradient(#003862,#123854);
 	color: #FFFFFF;
 	font-family: "Arial";
-	}
+}
+#navbar
+{
+	background-color: #003862;
+	position: fixed;
+	top: 5;
+	width: 100%;
+	transition: top 0.3s;
+}
+
+#navbar a
+{
+	float: left;
+	display : block;
+	color: white;
+	text-align: center;
+	padding: 15px;
+}
+
+#navbar a:hover 
+{
+	color: #4682B4;
+}
+
+
