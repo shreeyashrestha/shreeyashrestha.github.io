@@ -21,11 +21,11 @@ ul
 
 #navbar a
 {
-	float: left;
+	float: center;
 	display : block;
 	color: white;
 	text-align: center;
-	padding: 15px;
+	padding: 5px, 50px, 5px;
 }
 
 #navbar a:hover 
@@ -35,6 +35,9 @@ ul
 
 #main
 {
-	background-color: #EAF5F7
+	background-color: #EAF5F7;
+	position: center;
+	padding: 20px,10px,5px;
+
 }
 
