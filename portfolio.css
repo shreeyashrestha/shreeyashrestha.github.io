@@ -5,6 +5,11 @@ body
 	color: #FFFFFF;
 	font-family: "Arial";
 }
+
+ul
+{
+	list-style-type: none;
+}
 #navbar
 {
 	background-color: #003862;
