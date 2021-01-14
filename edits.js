@@ -7,4 +7,5 @@ function hamburg()
 	{
 		x.className = "navbar";
 	}
+	
 }
