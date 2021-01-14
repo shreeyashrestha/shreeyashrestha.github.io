@@ -3,7 +3,8 @@ body
 {
 	background-color: #003862;
 	color: #FFFFFF;
-	
+	padding: 30px;
+
 }
 .navbar
 {
@@ -61,7 +62,7 @@ body
 .main
 {
 	background-color: #EAF5F7;
-	border: 50px solid #003862;
+	border: 30px solid #003862;
 	font-family:'DM Sans', sans-serif;
 
 
@@ -71,6 +72,7 @@ body
 	padding: 200px 20px 0px 100px;
 	font-weight: 700;
 	letter-spacing: 2px;
+	width: 700px;
 }
 .title h1
 {
@@ -78,7 +80,7 @@ body
 	border-right: .15em solid #003862;
 	white-space: nowrap;
 	margin: 0 auto;
-	animation: text 1.5s steps(15, end), blink .5s steps(10,end) infinite;
+	animation: text 1.5s steps(15, end), blink .5s steps(5,end) infinite;
 }
 
 @keyframes text
@@ -90,7 +92,8 @@ body
 @keyframes blink
 {
 	from,to{border-color:transparent}
-	50%{border-color:#003862}
+	50%{border-color:#003862 }
+	
 }
 .intro
 {
@@ -126,8 +129,8 @@ body
 	.navbar.responsive
 	{
 		position: relative;
-		top:43px;
-		background-color:#001861;
+		background-color:#003862;
+
 	}
 	.navbar.responsive .icon 
 	{
