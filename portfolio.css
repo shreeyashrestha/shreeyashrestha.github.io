@@ -3,23 +3,25 @@ body
 {
 	background-color: #003862;
 	color: #FFFFFF;
-	padding: 30px;
+	padding-top: 5em;
+	justify-content: center;
 }
 .navbar
 {
-	padding: 20px;
+	padding-top:45px;
+	padding-bottom: 15px;
 	background-color:#003862;
 	overflow: hidden;
 	text-align: center;
 	z-index :8;
 	position: fixed;
 	top:0;
+	left:0;
 	width:100%;
 }
 .navbar a
 {
 	display: inline-block;
-	margin-right: -4px;
 	text-decoration: none;
 	color: white;
 	font-family: Raleway;
@@ -60,24 +62,45 @@ body
 */
 .main
 {
-	background-color: #EAF5F7;	
 	font-family:'DM Sans', sans-serif;
 	justify-content: center;
 }
+.main{
+	background: linear-gradient(-45deg, #003862,#6bace3,#99d0ff,#29a8d6);
+	background-size: 600% 600%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 .title
 {
-	padding: 200px 400px 0px;
+	height: 100%;
+	display:flex;
+	align-items:center;
+	justify-content: center;
 	font-weight: 700;
 	letter-spacing: 2px;
-	width: 700px;
-	}
-.title h1
+	padding: 150px 10px 10px;
+	
+}
+.animtext h1
 {
 	overflow:hidden;
-	border-right: .15em solid #003862;
+	border-right: .15em solid white;
 	white-space: nowrap;
 	margin: 0 auto;
 	animation: text 1.5s steps(15, end), blink .5s steps(5,end) infinite;
+
 }
 
 @keyframes text
@@ -89,19 +112,19 @@ body
 @keyframes blink
 {
 	from,to{border-color:transparent}
-	50%{border-color:#003862 }
+	50%{border-color:white }
 	
 }
 .intro
 {
-	padding: 0px 400px 10px;
-	text-align: center;
+	text-align:center;
 	font-family:'DM Sans', sans-serif;
 	font-weight: 900;
 	font-size: 28px;
-	color: #003862;
+	color: #6bace3;
 	line-height: 1.4;
 	letter-spacing: 1px;
+	padding-bottom: 100px;
 
 }
 
@@ -127,12 +150,13 @@ body
 {
 	.navbar.responsive
 	{
-		position: relative;
-		background-color:#003862;
-
+		background-color:#003862
+		left:0;
+		top:0;
 	}
 	.navbar.responsive .icon 
 	{
+		
 		position: fixed;
 		right: 0;
 		top: 0;		
