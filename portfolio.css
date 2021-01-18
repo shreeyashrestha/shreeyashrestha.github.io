@@ -10,8 +10,8 @@ body
 }
 .navbar
 {
-	padding-top:45px;
-	padding-bottom: 15px;
+	padding-top:20px;
+	padding-bottom: 10px;
 	background-color:#003862;
 	overflow: hidden;
 	text-align: center;
@@ -152,19 +152,19 @@ body
 	.navbar a {display:none;}
 	.navbar a.icon
 	{
+		border-color:transparent;
 		float: right;
 		display: block;
 		width: 60px;
 	}
+
 }
 
 @media screen and (max-width: 820px)
 {
 	.navbar.responsive
 	{
-		background-color:#003862
-		left:0;
-		top:0;
+		background-color:#003862;
 	}
 	.navbar.responsive .icon 
 	{
@@ -182,7 +182,14 @@ body
 	.navbar.responsive a:hover
 	{
 		color: white;
+		border-color:transparent;
 		background-color:#4682B4;
+	}
+	.navbar.responsive a.active
+	{
+		border-color:transparent;
+		font-weight: bold;
+		color:#99d0ff;
 	}
 }
 
