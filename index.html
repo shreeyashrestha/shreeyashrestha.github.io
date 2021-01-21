@@ -4,36 +4,49 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content ="width=device-width, initial-scale =1.0">
-	<link rel ="stylesheet" href ="portfolio.css" type ="text/css">
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico?">
+	<link rel ="stylesheet" href ="portfolio.css" type ="text/css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
-
 	<script src = "edits.js"> </script>
-
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	
 	<title>Shreeya Shrestha | Web Developer</title>
 </head>
 
-<body>
-	<!--navigation bar-->
-	<nav>
-	<div class ="navbar" id ="nav_cen">
-			<a href = "index.html" class ="active">Home</a>
-			<a href = "#about">About</a>
-			<a href = "#projects">Projects</a>
-			<a href = "#resume">Resume</a>
-			<a href = "javascript:void(0);" style = "font-size: 30px;" title = "Menu" class ="icon" onclick ="hamburg()">&#9776;</a>
-	</div>
-</nav>
-
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
+<!--navigation bar-->
+	<nav class="navbar navbar-custom navbar-fixed-top">
+		<div class="container-fluid">
+			<div class ="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          			<span class="icon-bar"></span>
+          			<span class="icon-bar"></span>
+          			<span class="icon-bar"></span>
+          		</button>
+          	</div>
+  			<div>
+  				<div class="collapse navbar-collapse" id="myNavbar">
+  					<ul class="nav navbar-nav">
+          				<li><a href="#home">Home</a></li>
+          				<li><a href="#about">About</a></li>
+          				<li><a href="#projects">Projects</a></li>
+          			</ul>
+          		</div>
+          	</div>
+        </div>
+    </nav>
+<!--home-->
 	<div class ="main">
 		<div class = "title">
 			<div class="animtext">
-				<h1 style ="font-size: 10vw;"><span style ="line-height:0em; color: white;">hello</span><span style="color: #6bace3;">world!</span></h1>
+				<h1 style ="font-size: 10vw;">
+					<span style ="font-weight:bold;line-height:0em; color: white;">hello</span><span style="font-weight:bold;color: #6bace3;">world!</span>
+				</h1>
 			</div>
 		</div>
 		<div class ="intro">
@@ -43,43 +56,58 @@
 		</div>
 	</div>
 
-	<!--about me-->
-	<a name ="about"></a>
-	<div class="about">
+<!--about-->
+
+	<div id="about" class="about">
 	
-		<h2 style ="font-weight:bolder; padding-left:80px;font-size:4vw;text-align:center;line-height:0em;color:#4C94CF;">about <span style="color: #003862;font-weight:bolder;">me</span></h2>
-		<h1 style ="font-size:4.5vw; text-align: right;line-height:1em;padding-right:60px;"><span style="background-color:#003862;">Shreeya Shrestha</span></h1>
+		<h2 style ="font-weight:bolder; font-size:4vw;text-align:center;line-height:0em;color:#4C94CF;">about <span style="color: #003862;font-weight:bolder;">me</span></h2>
+		<h1 style ="font-size:4.5vw; text-align: right;line-height:2em;padding-right:50px;font-weight:bold;"><span style="background-color:#003862;">Shreeya Shrestha</span></h1>
 		<div class ="image">
-			<img src ="images/propic.jpeg" alt ="profile picture" width ="300" height ="300">
-		</div>
+			<img src ="images/propic.jpeg" alt ="profile picture" width ="250" height ="250">
+			<ul style="list-style: none;">
+				<li><a href ="ShresthaResume.pdf" target ="_blank" download>View Resume!</a></li></ul>
+		</div>		
 		<div class ="details">
 			<p>For me, to be a <a href ="#projects" style="text-decoration: none; letter-spacing: 1px;color:#4C94CF; font-weight: bolder;">CREATOR</a> is to be someone who can change ideas into reality creatively and efficiently. Thinking outside of the box while utilizing today's advanced technology, I aim to innovate digital visual designs. This goal encouraged me to start my journey as an international student from Nepal and gain inspiration from my dynamic university life at the University of Central Florida (UCF).<br>
 			<br>	
 			As a fresh graduate of December 2020 from the College of Engineering and Computer Science (CECS) at UCF, I am actively searching for positions in Web Development and Design. Having lived in Orlando for five years now, I have been continuously exposed to new cultures and diverse groups of people. This has made me able to quickly adapt to changes and learn about a variety of ideas and perspectives. Being a detail-oriented person, I keep my goals and tasks organized to track my productivity. I believe that the skills that I have attained from my studies and experience define me and I am looking forward to implementing and polishing them in any opportunity that I receive.</p> 
 		</div>
+
 	</div>
 	
-	<!--projects-->
-	<a name ="projects"></a>
-	<div class ="projects">
-		<h2 style ="font-weight:bolder; font-size:4.5vw;text-align:left;line-height:0em;color:#4C94CF;"> projects<span style="color:#003862;"> &</span> ideas</h2>
+<!--projects-->
+<div id ="projects" class ="projects">
+		<h2 style ="font-weight:bolder; font-size:4.5vw;text-align:left;line-height:0em;color:#4C94CF; line-height: 1.5em;"> projects<span style="color:#003862;"> &</span> ideas</h2>
 		<div class = "row">
 			<div class ="column">
-				<a href="#about"><img src="images/webpage.png" alt="website of " width=100%></a>
+				<a href="#" style="text-decoration:none;"><img src="images/webpage.png" alt="website of ">
+				<h3 style = "letter-spacing:.5px; color:white; font-weight: bolder; font-size:20px; background-color:#003862; text-align: center;"> Webpage Name</h3>
+				</a>
+				<p style ="text-align: center;"> webpage description </p>				
 			</div>
 			<div class="column">
-				<a href="#"><img src="images/webpage.png" alt="website of " width=100%></a>			
+				<a href="#"  style="text-decoration:none;"><img src="images/webpage.png" alt="website of ">
+				<h3 style = "letter-spacing:.5px; color:white; font-weight: bolder;font-size:20px; background-color:#003862; text-align: center;"> Webpage Name</h3>
+				</a>
+				<p style ="text-align: center;"> webpage description </p>			
 			</div>
 			<div class="column">
-				<a href="#"><img src="images/webpage.png" alt="website of " width=100%></a>
-			
+				<a href="#" style="text-decoration:none;"><img src="images/webpage.png" alt="website of ">
+					<h3 style = "letter-spacing:.5px; color:white; font-weight: bolder;font-size:20px; background-color:#003862; text-align: center;"> Webpage Name</h3>
+				</a>
+				<p style ="text-align: center;"> webpage description </p>
 			</div>
-
 		</div>			
 	</div>
-
-	<div class = "resume">
-		<a name ="resume"> </a>
-	</div>	
+<!--footer-->
+	<footer class="notes">
+		<div>
+				<a href="https://www.linkedin.com/in/shreeyashrestha/" target ="_blank" class="fa fa-linkedin"></a>
+				<a href="https://github.com/shreeyashrestha" target ="_blank" class="fa fa-github"></a>
+				<a href="mailto:srshrestha@knights.ucf.edu" class="fa fa-envelope"></a>
+				<a href="tel:407-419-2014" class="fa fa-mobile"></a>
+			</div>
+		<p>&copy; Shreeya Shrestha 2021</p>
+	</footer>	
 </body>
 </html>
