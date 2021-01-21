@@ -75,7 +75,7 @@ li.active a
 	margin: 35px !important;
 }
 .main{
-	background: linear-gradient(125deg, #EAF5F7, #003862, #276ea3, #99d0ff);
+	background: linear-gradient(125deg,#2383ba, #EAF5F7, #003862, #276ea3, #99d0ff);
 	background-size: 800% 800%;
 	animation: gradient 20s ease infinite;
 }
